@@ -8,8 +8,7 @@ let pass = "";
 
 if (!login) {
   alert("Отменено пользователем!");
-}
-if (login === adminLogin) {
+} else if (login === adminLogin) {
   pass = prompt("password", "");
   if (!pass) {
     alert("Отменено пользователем!");

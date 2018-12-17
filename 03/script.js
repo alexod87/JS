@@ -3,12 +3,9 @@
 const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
 const isLoginValid = function(login) {
-  login.split("");
   if (login.length >= 4 && login.length <= 16) {
     return true;
-  } else {
-    return false;
-  }
+  } else return false;
 };
 
 const isLoginUnique = (allLogins, login) => !allLogins.includes(login);
